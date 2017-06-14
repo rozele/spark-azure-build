@@ -20,4 +20,4 @@
 # Basing from Mesos image so the Mesos native library is present.
 FROM mesosphere/spark:1.1.0-2.1.1-hadoop-2.7
 
-COPY lib/* /opt/spark/dist/jars
+COPY lib/ /opt/spark/dist/jars
