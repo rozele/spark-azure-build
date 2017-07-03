@@ -1,1 +1,1 @@
-echo $1 | openssl enc -aes-128-cbc -a -d -salt -pass password
+echo $1 | openssl enc -aes-128-cbc -a -d -salt -pass pass:password
