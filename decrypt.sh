@@ -1,1 +1,2 @@
-echo $(echo $1 | tr '\\' '\n') | openssl enc -aes-128-cbc -a -d -salt -pass pass:password
+BASEDIR=$(dirname "$0")
+echo $1 | base64 -d | openssl rsautl -decrypt -inkey $BASEDIR/private_key.pem
